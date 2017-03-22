@@ -1,6 +1,4 @@
-<body>
-
-    <!-- Main Navigation 
+ <!-- Main Navigation 
     ================================================== -->
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -18,9 +16,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                 <li><a href="<?php echo base_url('home') ?>" class=" active scroll" >Home</a></li>
+                 <li><a href="<?php echo base_url('home') ?>" >Home</a></li>
                  <li><a href="<?php echo base_url('services')?>">Services</a></li>
-                 <li><a href="<?php echo base_url('about') ?> ">About</a></li>
+                 <li><a href="<?php echo base_url('about') ?> " class=" active scroll">About</a></li>
                  <li><a href="<?php echo base_url('ourworks') ?> " > Our Works</a></li>
                  <li><a href="<?php echo base_url('process') ?> ">Process</a></li>
                  <li><a href="<?php echo base_url('pricing') ?> ">Pricing</a></li>
@@ -31,35 +29,155 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <!-- Home Section
-        ================================================== -->
-        <div id="tf-home">
-            <div class="overlay"> <!-- Overlay Color -->
-                <div class="container"> <!-- container -->
-                    <div class="content-heading text-center"> <!-- Input Your Home Content Here -->
-                        <h1>Websites / Branding / Interactive</h1>
-                        <p class="lead">We create beautiful, innovative and  effective handcrafted brands & website.</p>
-                        <a href="#tf-works" class="scroll goto-btn text-uppercase">View Our Works</a> <!-- Link to your portfolio section -->
-                    </div><!-- End Input Your Home Content Here -->
-                </div> <!-- end container -->
-            </div><!-- End Overlay Color -->
-        </div>
+<!-- About Us Section
+    ================================================== -->
+    <div id="tf-about">
+        <div class="container"> <!-- container -->
+            <div class="section-header">
+                <h2>What To Know Us <span class="highlight"><strong>Better</strong></span></h2>
+                <h5><em>We design and build functional and beautiful websites</em></h5>
+                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
+            </div>
+        </div><!-- end container -->
 
-        <!-- Intro Section
-        ================================================== -->
-        <div id="tf-intro">
-            <div class="container"> <!-- container -->
+        <div class="gray-bg"> <!-- fullwidth gray background -->
+
+            <div class="container"><!-- container -->
                 <div class="row"> <!-- row -->
 
-                    <div class="col-md-8 col-md-offset-2"> 
-                        <img src="img/logo-w.png" class="intro-logo img-responsive" alt="free-template"> <!-- Your company logo in white -->
-                        <p>Ethanol Portfolio Template is a clean and simple website designed layout for multi-purpose options, this is perfect for any web works. This Template built with bootstrap 3.3.2 and it is totally mobile resposnive. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus..</p>
-                    </div>
-                    
-                </div><!-- end row -->
+                    <div class="col-md-6"> <!-- left content col 6 -->
+                        <div class="about-left-content text-center">
+                            <div class="img-wrap"> <!-- profile image wrap -->
+                                <div class="profile-img"> <!-- company profile details -->
+                                    <img src="http://placehold.it/800x650" class="img-responsive" alt="Image"> <!-- change link to your image for your company profile -->
+                                    <ul class="list-inline social"> 
+                                        <li><a href="#" class="fa fa-facebook"></a></li> <!-- facebook link here -->
+                                        <li><a href="#" class="fa fa-twitter"></a></li> <!-- twitter link here -->
+                                        <li><a href="#" class="fa fa-google-plus"></a></li> <!-- google plus link here -->
+                                    </ul>
+                                </div>
+                            </div><!-- end profile image wrap -->
+                            <h2><span class="small">Developing</span> Amazing Things <br><span class="small">with Passion since 2012.</span></h2>
+                        </div>
+                    </div><!-- end left content col 6 -->
+
+                    <div class="col-md-6"><!-- right content col 6 -->
+                        <div class="about-right-content"> <!-- right content wrapper -->
+
+                            <h4><strong>Professional Profile</strong></h4>
+                            <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
+                            
+                            <div class="skills"> <!-- skills progress bar -->
+                                <div class="skillset"> <!-- skill #1 -->
+                                    <p>UI/UX Design</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                            <span class="sr-only">90% Complete</span>
+                                        </div>
+                                    </div>
+                                </div><!-- end skill #1 -->
+
+                                <div class="skillset"> <!-- skill #2 -->
+                                    <p>HTML5, CSS3, SASS</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                            <span class="sr-only">85% Complete</span>
+                                        </div>
+                                    </div>
+                                </div><!-- end skill #2 -->
+
+                                <div class="skillset"> <!-- skill #3 -->
+                                    <p>WordPress</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;">
+                                            <span class="sr-only">99% Complete</span>
+                                        </div>
+                                    </div>
+                                </div> <!-- end skill #3 -->
+
+                                <div class="skillset"> <!-- skill #4 -->
+                                    <p>Graphic Design</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                            <span class="sr-only">70% Complete</span>
+                                        </div>
+                                    </div>
+                                </div> <!-- end skill #4 -->
+
+                                <div class="skillset"> <!-- skill #5 -->
+                                    <p>Marketing</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">50% Complete</span>
+                                        </div>
+                                    </div>
+                                </div><!-- end skill #4 -->
+                            </div> <!-- end skills progress bar -->
+
+                        </div><!-- end right content wrapper -->
+                    </div><!-- end right content col 6 -->
+
+                </div> <!-- end row -->
             </div><!-- end container -->
-        </div><!-- end container -->
-<div id="tf-team">
+
+            <div id="tf-counter" class="text-center">
+                <div class="container">
+                    <div class="row"> <!-- Row -->
+
+                        <div class="counter"> 
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 col-md-2 col-md-offset-1 facts"><!-- counter #1 -->
+                            <div class="count-box"> 
+                                <i class="fa fa-thumbs-up"></i>
+                                <h4 class="count">720</h4>
+                                <p class="small">Happy Customers</p>
+                            </div> 
+                          </div><!-- end counter #1 -->
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"><!-- counter #2 -->
+                            <div class="count-box">
+                              <i class="fa fa-user"></i>
+                              <h4 class="count">480</h4>
+                              <p class="small">People Donated</p>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #3 -->
+                            <div class="count-box">
+                              <i class="fa fa-desktop"></i>
+                              <h4 class="count">1253</h4>
+                              <p class="small">People Participated</p>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #4 -->
+                            <div class="count-box">
+                              <i class="fa fa-dollar"></i>
+                              <h4 class="count">4580</h4>
+                              <p class="small">Donation Collected</p>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #5 -->
+                            <div class="count-box last">
+                              <i class="fa fa-line-chart"></i>
+                              <h4 class="count">12853</h4>
+                              <p class="small">Total Hits</p>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div> <!-- End Row -->
+                </div>
+            </div>
+
+        </div> <!-- end fullwidth gray background -->
+    </div>
+
+    <!-- Team Section
+    ================================================== -->
+    <div id="tf-team">
         <div class="container"> <!-- container -->
             <div class="section-header">
                 <h2>Awesome People Behind <span class="highlight"><strong>ethanol</strong></span></h2>
@@ -250,149 +368,4 @@
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </div><!-- end fullwidth gray background -->
-    </div>
-
-    <!-- Works Section
-    ================================================== -->
-    <div id="tf-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Work is <span class="highlight"><strong>Incredible</strong></span></h2>
-                <h5><em>We design and build functional and beautiful websites</em></h5>
-                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
-            </div>
-
-            <div class="text-center">
-                <ul class="list-inline cat"> <!-- Portfolio Filter Categories -->
-                    <li><a href="#" data-filter="*" class="active">All</a></li>
-                    <li><a href="#" data-filter=".web">Web</a></li>
-                    <li><a href="#" data-filter=".brand">Branding</a></li>
-                    <li><a href="#" data-filter=".app">Apps</a></li>
-                    <li><a href="#" data-filter=".others">Others</a></li>
-                </ul><!-- End Portfolio Filter Categories -->
-            </div>
-
-        </div><!-- End Container -->
-
-        <div class="container-fluid"> <!-- fluid container -->
-             <div id="itemsWork" class="row text-center"> <!-- Portfolio Wrapper Row -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding brand others"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/01@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/01@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/01.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding apps"> <!-- Works #2 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Mobile Application" href="img/portfolio/02@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/02@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                            </div>
-                            <img src="img/portfolio/02.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #2 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others brand"><!-- Works #3 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/03@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/03@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                            </div>
-                            <img src="img/portfolio/03.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #3 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others web"> <!-- Works #4 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/04@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/04@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                            </div>
-                            <img src="img/portfolio/04.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div> <!-- end Works #4 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding web others"> <!-- Works #5 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/05@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/05@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                            </div>
-                            <img src="img/portfolio/05.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div> <!-- end Works #5 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding app">  <!-- Works #6 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/06@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/06@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                            </div>
-                            <img src="img/portfolio/06.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #6 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding web brand"><!-- Works #7 col 3 -->
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/07@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/07@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                            </div>
-                            <img src="img/portfolio/07.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #7 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding app"> <!-- Works #8 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/08@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/08@2x.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                            </div>
-                            <img src="img/portfolio/08.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div> 
-                    </div>
-                </div> <!-- end Works #8 col 3 -->
-                
-            </div> <!-- End Row -->
-
-        </div> <!-- End Container-Fluid -->
-    </div>
-
-
     </div>

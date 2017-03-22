@@ -12,7 +12,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<?php echo base_url('index') ?>"><img src="img/logo.png" alt="..."></a>
+              <a class="navbar-brand" href="<?php echo base_url('home') ?>"><img src="img/logo.png" alt="..."></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,10 +21,10 @@
                 <li><a href="<?php echo base_url('home') ?>" >Home</a></li>
                  <li><a href="<?php echo base_url('services')?>" class="active scroll">Services</a></li>
                  <li><a href="<?php echo base_url('about') ?> ">About</a></li>
-                 <li><a href="<?php echo base_url('works') ?> " >Works</a></li>
+                 <li><a href="<?php echo base_url('ourworks') ?> " > Our Works</a></li>
                  <li><a href="<?php echo base_url('process') ?> ">Process</a></li>
                  <li><a href="<?php echo base_url('pricing') ?> ">Pricing</a></li>
-                 <li><a href="<?php echo base_url('home') ?>" >Blog</a></li>
+                 <li><a href="<?php echo base_url('blog') ?>" >Blog</a></li>
                  <li><a href="<?php echo base_url('contact') ?>" >Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->

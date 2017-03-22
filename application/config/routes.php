@@ -53,21 +53,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['404_override'] = '';
 // $route['translate_uri_dashes'] = FALSE;
 
-    $Mainpage =  $route[('index')]     =   'index/Mainpage/$1';
-    $services =  $route[('services')]  =   'services/Mainpage/$1';
-	$home     =  $route['(home)']      =   'home/index/$1';
-	$pricing  =  $route['(pricing)']   =   'pricing/pricings/$1'; 
+    $route['default_controller'] = 'home';
+
+    $about     =   $route[('about')]      =   'about/aboutpage/$1';
+    $services  =   $route[('services')]   =   'services/Mainpage/$1';
+	$home      =   $route['(home)']       =   'home/index/$1';
+	$pricing   =   $route['(pricing)']    =   'pricing/pricings/$1'; 
+	$blog      =   $route['(blog)']       =	  'blog/blogpage/$1';
+	$ourworks  =   $route['(ourworks)']   =	  'ourworks/workpage/$1';
+	$process   =   $route['(process)']    =   'process/processpage/$1';
+	$contact   =   $route['(contact)']    =   'contact/contactpage/$1';
 
 	$controller = array(
 
-        $Mainpage => 'Mainpage',
-        $services => 'Services',
-		$home     => 'home',
-		$pricing  => 'pricing'
+        $about      =>  'about',
+        $services   =>  'Services',
+		$home       =>  'home',
+		$pricing    =>  'pricing',
+		$blog 	    =>  'blog',
+		$ourworks 	=>  'ourworks',
+		$process    =>  'work-process',
+		$contact    =>  'contact'
 
 		);
 
-	if (array_search($this->uri->segment(1), $controller)) {
+	if (array_search($this->uri->segment(1), $controller, TRUE)) {
 
 		$route['default_controller'] = 'home';
 	}
