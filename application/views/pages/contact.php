@@ -41,7 +41,52 @@
             </div>
         </div><!-- end container -->
 
-        <!-- <div id="map"></div> -->  <!-- google map -->
+        <div id="map"> <!-- Google map starts here-->
+
+    <script>
+
+      if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function (p) {
+        var LatLng = new google.maps.LatLng(p.coords.latitude, p.coords.longitude);
+        var mapOptions = {
+            center: LatLng,
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var image ='img/map-marker-icon.png';
+        var marker = new google.maps.Marker({
+            position: LatLng,
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            icon:image,
+            title: "CURRENT LOCATION CORDINATES:" + '\n'  +  "Latitude  :   "  + '   '
+                         + p.coords.latitude    +  '\n' +    "Longitude :  " 
+                         + p.coords.longitude
+        });
+
+                marker.addListener('click', toggleBounce);
+                
+                function toggleBounce() {
+          if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+          } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }
+
+        google.maps.event.addListener(marker, "click", function (e) {
+            var infoWindow = new google.maps.InfoWindow();
+            infoWindow.setContent(marker.title);
+            infoWindow.open(map, marker);
+        });
+    });
+} else {
+    alert('Geo Location feature is not supported in this browser.');
+}
+    </script> </div>  <!-- google map ends here-->
 
         <div class="container"><!-- container -->
             <div class="row"> <!-- outer row -->
