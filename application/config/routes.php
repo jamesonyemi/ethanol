@@ -53,19 +53,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['404_override'] = '';
 // $route['translate_uri_dashes'] = FALSE;
 
-    $route['default_controller'] = 'home';
+    $route['default_controller'] = 'login';
 
-    $about     =   $route[('about')]      =   'about/aboutpage/$1';
-    $services  =   $route[('services')]   =   'services/Mainpage/$1';
-	$home      =   $route['(home)']       =   'home/index/$1';
-	$pricing   =   $route['(pricing)']    =   'pricing/pricings/$1'; 
-	$blog      =   $route['(blog)']       =	  'blog/blogpage/$1';
-	$ourworks  =   $route['(ourworks)']   =	  'ourworks/workpage/$1';
-	$process   =   $route['(process)']    =   'process/processpage/$1';
-	$contact   =   $route['(contact)']    =   'contact/contactpage/$1';
+    $user_login =   $route[('login')]      =   'Login/index/$1';
+    $about      =   $route[('about')]      =   'about/aboutpage/$1';
+    $services   =   $route[('services')]   =   'services/Mainpage/$1';
+	$home       =   $route['(home)']       =   'home/index/$1';
+	$pricing    =   $route['(pricing)']    =   'pricing/pricings/$1'; 
+	$blog       =   $route['(blog)']       =	  'blog/blogpage/$1';
+	$ourworks   =   $route['(ourworks)']   =	  'ourworks/workpage/$1';
+	$process    =   $route['(process)']    =   'process/processpage/$1';
+	$contact    =   $route['(contact)']    =   'contact/contactpage/$1';
 
 	$controller = array(
 
+        $user_login =>  'login',
         $about      =>  'about',
         $services   =>  'Services',
 		$home       =>  'home',
@@ -79,7 +81,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	if (array_search($this->uri->segment(1), $controller, TRUE)) {
 
-		$route['default_controller'] = 'home';
+		$route['default_controller'] = 'login';
 	}
 
 
