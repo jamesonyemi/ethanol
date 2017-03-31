@@ -18,6 +18,13 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	function __construct()
+	{
+		parent::__construct();
+
+		$this->check_isvalidated()
+	}
 	
 	public function index()
 	{
@@ -27,6 +34,20 @@ class Home extends CI_Controller {
 		      $this->load->view('pages/home', $data);
 		      $this->load->view('templates/footer', $data);	
 		      // print_r($data) ; exit();
+	}
+
+	private function check_isvalidated()
+	{
+		if (! $this->session->userdata('status')) {
+			
+			
+		}
+	}
+
+	public function do_logout()
+	{
+		$this->session->sess_destroy();
+		redirect('pages/login');
 	}
 
 
