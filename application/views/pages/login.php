@@ -21,10 +21,10 @@
     <div class="collapse navbar-collapse" id="navbar1">
       <ul class="nav navbar-nav navbar-right">
         <?php if ($this->session->userdata('login')){ ?>
-        <li><p class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></p></li>
+        <li><p class="navbar-text">Hello <?php echo $this->session->userdata('user_name'); ?></p></li>
         <li><a href="<?php echo base_url(); ?>index.php/home/logout">Log Out</a></li>
         <?php } else { ?>
-        <li><a href="<?php echo base_url(); ?>index.php/login">Login</a></li>
+        <li><a href="<?php echo base_url(); ?>">Login</a></li>
         <li><a href="<?php echo base_url(); ?>signup">Signup</a></li>
         <?php } ?>
       </ul>
@@ -40,7 +40,7 @@
       <legend>Login</legend>
       <div class="form-group">
         <label for="name">Email-ID</label>
-        <input class="form-control" name="email" placeholder="Enter Email-ID" type="text" value="<?php echo set_value('email'); ?>" />
+        <input class="form-control" name="email" placeholder="Enter Email" type="text" value="<?php echo set_value('email'); ?>" />
         <span class="text-danger"><?php echo form_error('email'); ?></span>
       </div>
       <div class="form-group">
@@ -58,11 +58,11 @@
   </div>
   <div class="row">
     <div class="col-md-4 col-md-offset-4 text-center">  
-    New User? <a href="<?php echo base_url(); ?>index.php/signup">Sign Up Here</a>
+    New User? <a href="<?php echo base_url(); ?>signup">Sign Up Here</a>
     </div>
   </div>
 </div>
-<script type="text/javascript" src="<?php echo base_url("assets/js/jquery-1.10.2.js"); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/jquery-1.11.2.min.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/bootstrap.js"); ?>"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<?php echo base_url('home') ?>"><img src="img/logo.png" alt="..."></a>
+              <a class="navbar-brand" href="<?php echo base_url('home') ?>"><img src="<?php echo base_url()?>img/logo.png" alt="..."></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +52,7 @@
                 <div class="row"> <!-- row -->
 
                     <div class="col-md-8 col-md-offset-2"> 
-                        <img src="img/logo-w.png" class="intro-logo img-responsive" alt="free-template"> <!-- Your company logo in white -->
+                        <img src="<?php echo base_url()?>img/logo-w.png" class="intro-logo img-responsive" alt="free-template"> <!-- Your company logo in white -->
                         <p>Ethanol Portfolio Template is a clean and simple website designed layout for multi-purpose options, this is perfect for any web works. This Template built with bootstrap 3.3.2 and it is totally mobile resposnive. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus..</p>
                     </div>
                     
@@ -64,7 +64,7 @@
             <div class="section-header">
                 <h2>Awesome People Behind <span class="highlight"><strong>ethanol</strong></span></h2>
                 <h5><em>We design and build functional and beautiful websites</em></h5>
-                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
+                <div class="fancy"><span><img src="<?php echo base_url()?>img/favicon.ico" alt="..."></span></div>
             </div>
 
              <div id="team" class="owl-carousel owl-theme text-center"> <!-- team carousel wrapper -->
@@ -74,7 +74,7 @@
                         <div class="hover-text off"> <!-- Hover Description -->
                             <p>Aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies.</p>
                         </div><!-- End Hover Description -->
-                        <img src="img/team/01.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
+                        <img src="<?php echo base_url()?>img/team/01.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>Maria Shara</h3>
                             <p class="text-uppercase">Founder / CEO</p>
@@ -92,7 +92,7 @@
                         <div class="hover-text off"> <!-- Hover Description -->
                             <p>Praesent eget bibendum purus, quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies. Aliquet rutrum dui a varius. Mauris ornare tortor.</p>
                         </div> <!-- End Hover Description -->
-                        <img src="img/team/02.jpg" alt="..." class="img-responsive"><!-- Team Image -->
+                        <img src="<?php echo base_url()?>img/team/02.jpg" alt="..." class="img-responsive"><!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>Jenn Pereira</h3>
                             <p class="text-uppercase">Senior Creative Director</p>
@@ -110,7 +110,7 @@
                         <div class="hover-text off"> <!-- Hover Description -->
                             <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Nec bibendum erat volutpat ultricies. Aliquet rutrum dui a varius. Mauris ornare tortor. </p>
                         </div> <!-- End Hover Description -->
-                        <img src="img/team/01.jpg" alt="..." class="img-responsive"><!-- Team Image -->
+                        <img src="<?php echo base_url()?>img/team/01.jpg" alt="..." class="img-responsive"><!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>Serena William</h3>
                             <p class="text-uppercase">Senior Designer</p>
@@ -128,7 +128,7 @@
                         <div class="hover-text off"> <!-- Hover Description -->
                             <p>Aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies.</p>
                         </div> <!-- End Hover Description -->
-                        <img src="img/team/01.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
+                        <img src="<?php echo base_url()?>img/team/01.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>Maria Shara</h3>
                             <p class="text-uppercase">Founder / CEO</p>
@@ -146,7 +146,7 @@
                         <div class="hover-text off"> <!-- Hover Description -->
                             <p>Praesent eget bibendum purus, quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies. Aliquet rutrum dui a varius. Mauris ornare tortor.</p>
                         </div> <!-- End Hover Description -->
-                        <img src="img/team/02.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
+                        <img src="<?php echo base_url()?>img/team/02.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>Jenn Pereira</h3>
                             <p class="text-uppercase">Senior Creative Director</p>
@@ -172,7 +172,7 @@
             <div class="section-header">
                 <h2>Great Products and <span class="highlight"><strong>Features</strong></span></h2>
                 <h5><em>We design and build functional and beautiful websites</em></h5>
-                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
+                <div class="fancy"><span><img src="<?php echo base_url()?>img/favicon.ico" alt="..."></span></div>
             </div>
         </div>
 
@@ -222,27 +222,27 @@
                             <div role="tabpanel" class="tab-pane fade in active" id="f1"> <!-- feature #1 content open -->
                                 <h4>Internet Communication</h4>
                                 <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
-                                <img src="img/tab01.png" class="img-responsive" alt="...">
+                                <img src="<?php echo base_url()?>img/tab01.png" class="img-responsive" alt="...">
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="f2"> <!-- feature #2 content -->
                                 <h4>Branding and Development</h4>
                                 <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
-                                <img src="img/tab02.png" class="img-responsive" alt="...">
+                                <img src="<?php echo base_url()?>img/tab02.png" class="img-responsive" alt="...">
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="f3"> <!-- feature #3 content -->
                                 <h4>Motion Graphics</h4>
                                 <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
-                                <img src="img/tab03.png" class="img-responsive" alt="...">
+                                <img src="<?php echo base_url()?>img/tab03.png" class="img-responsive" alt="...">
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="f4"> <!-- feature #4 content -->
                                 <h4>Mobile Application</h4>
                                 <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
-                                <img src="img/tab04.png" class="img-responsive" alt="...">
+                                <img src="<?php echo base_url()?>img/tab04.png" class="img-responsive" alt="...">
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="f5"> <!-- feature #5 content -->
                                 <h4>Relaible Company Analysis</h4>
                                 <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
-                                <img src="img/tab05.png" class="img-responsive" alt="...">
+                                <img src="<?php echo base_url()?>img/tab05.png" class="img-responsive" alt="...">
                             </div>
                         </div> <!-- end tab content wrapper -->
                     </div><!-- end right content col 6 -->
@@ -259,7 +259,7 @@
             <div class="section-header">
                 <h2>Our Work is <span class="highlight"><strong>Incredible</strong></span></h2>
                 <h5><em>We design and build functional and beautiful websites</em></h5>
-                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
+                <div class="fancy"><span><img src="<?php echo base_url()?>img/favicon.ico" alt="..."></span></div>
             </div>
 
             <div class="text-center">
@@ -281,12 +281,12 @@
                     <div class="box"> 
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/01@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/01@2x.jpg">
+                                <a title="Logo Identity Design" href="<?php echo base_url()?>img/portfolio/01@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo base_url()?>img/portfolio/01@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
                             </div> 
-                            <img src="img/portfolio/01.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/01.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div>
                     </div>
                 </div><!-- end Works #1 col 3 -->
@@ -295,12 +295,12 @@
                     <div class="box">
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Mobile Application" href="img/portfolio/02@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/02@2x.jpg">
+                                <a title="Mobile Application" href="<?php echo base_url()?>img/portfolio/02@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo base_url()?>img/portfolio/02@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                             </div>
-                            <img src="img/portfolio/02.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/02.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div>
                     </div>
                 </div><!-- end Works #2 col 3 -->
@@ -309,12 +309,12 @@
                     <div class="box">
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/03@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/03@2x.jpg">
+                                <a title="Freedom Project #1" href="<?php echo base_url()?>img/portfolio/03@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/03@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                             </div>
-                            <img src="img/portfolio/03.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/03.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div>
                     </div>
                 </div><!-- end Works #3 col 3 -->
@@ -323,12 +323,12 @@
                     <div class="box">
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/04@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/04@2x.jpg">
+                                <a title="Freedom Project #1" href="<?php echo base_url()?>img/portfolio/04@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo base_url()?>img/portfolio/04@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                             </div>
-                            <img src="img/portfolio/04.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/04.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div>
                     </div>
                 </div> <!-- end Works #4 col 3 -->
@@ -337,12 +337,12 @@
                     <div class="box">
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/05@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/05@2x.jpg">
+                                <a title="Freedom Project #1" href="<?php echo base_url()?>img/portfolio/05@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo base_url()?>img/portfolio/05@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                             </div>
-                            <img src="img/portfolio/05.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/05.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div>
                     </div>
                 </div> <!-- end Works #5 col 3 -->
@@ -351,12 +351,12 @@
                     <div class="box">
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/06@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/06@2x.jpg">
+                                <a title="Freedom Project #1" href="<?php echo base_url()?>img/portfolio/06@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/06@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                             </div>
-                            <img src="img/portfolio/06.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/06.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div>
                     </div>
                 </div><!-- end Works #6 col 3 -->
@@ -365,12 +365,12 @@
                     <div class="box">
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/07@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/07@2x.jpg">
+                                <a title="Freedom Project #1" href="<?php echo base_url()?>img/portfolio/07@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo base_url()?>img/portfolio/07@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                             </div>
-                            <img src="img/portfolio/07.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/07.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div>
                     </div>
                 </div><!-- end Works #7 col 3 -->
@@ -379,12 +379,12 @@
                     <div class="box"> 
                         <div class="hover-bg">
                             <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/08@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/08@2x.jpg">
+                                <a title="Freedom Project #1" href="<?php echo base_url()?>img/portfolio/08@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo base_url()?>img/portfolio/08@2x.jpg">
                                     <i class="fa fa-expand"></i>
                                 </a>
                                 <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                             </div>
-                            <img src="img/portfolio/08.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                            <img src="<?php echo base_url()?>img/portfolio/08.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                         </div> 
                     </div>
                 </div> <!-- end Works #8 col 3 -->

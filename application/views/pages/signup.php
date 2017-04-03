@@ -15,12 +15,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/home">KODING MADE SIMPLE</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>/home/index">KODING MADE SIMPLE</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
 				<?php if ($this->session->userdata('login')){ ?>
-				<li><p class="navbar-text">Hello <?php echo $this->session->userdata('uname'); ?></p></li>
+				<li><p class="navbar-text">Hello <?php echo $this->session->userdata('firstname'); ?></p></li>
 				<li><a href="<?php echo base_url(); ?>index.php/home/logout">Log Out</a></li>
 				<?php } else { ?>
 				<li><a href="<?php echo base_url(); ?>login">Login</a></li>
@@ -51,7 +51,7 @@
 		
 			<div class="form-group">
 				<label for="email">Email ID</label>
-				<input class="form-control" name="email" placeholder="Email-ID" type="text" value="<?php echo set_value('email'); ?>" />
+				<input class="form-control" name="email" placeholder="Email" type="text" value="<?php echo set_value('email'); ?>" />
 				<span class="text-danger"><?php echo form_error('email'); ?></span>
 			</div>
 
@@ -81,7 +81,7 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="<?php echo base_url("assets/js/jquery-1.10.2.js"); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url("assets/js/bootstrap.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/jquery-1.11.2.min.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("js/bootstrap.js"); ?>"></script>
 </body>
 </html>

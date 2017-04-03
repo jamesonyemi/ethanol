@@ -22,8 +22,8 @@ class Home extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-
-		$this->check_isvalidated()
+		$this->load->helper(array('url', 'html'));
+		$this->load->library('session');
 	}
 	
 	public function index()
@@ -36,19 +36,21 @@ class Home extends CI_Controller {
 		      // print_r($data) ; exit();
 	}
 
-	private function check_isvalidated()
-	{
-		if (! $this->session->userdata('status')) {
+	// private function check_isvalidated()
+	// {
+	// 	if (! $this->session->userdata('status')) {
 			
 			
-		}
-	}
-
-	public function do_logout()
-	{
-		$this->session->sess_destroy();
-		redirect('pages/login');
-	}
+	// 	}
+	// }
+	// function logout()
+	// 	{
+	// 		// destroy session
+	//         $data = array('login' => '', 'firstname' => '', 'uid' => '');
+	//         $this->session->unset_userdata($data);
+	//         $this->session->sess_destroy();
+	// 		redirect('home/index');
+	// 	}
 
 
 }
