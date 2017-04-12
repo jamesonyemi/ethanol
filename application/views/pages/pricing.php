@@ -12,6 +12,7 @@
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                </button>
+               <a class="navbar-stack"  href="<?php echo base_url(); ?>users/logout" class="logoutBtn">Logout</a>
                <a class="navbar-brand" href="<?php echo base_url('home')?>"><img src="<?php echo base_url(); ?>img/logo.png" alt="..."></a>
              </div>
 

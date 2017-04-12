@@ -16,7 +16,9 @@ class Users extends CI_Controller {
         if($this->session->userdata('isUserLoggedIn')){
             $data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
             //load the view
-            $this->load->view('users/account', $data);
+            $this->load->view('templates/header', $data);
+            $this->load->view('pages/home', $data);
+            $this->load->view('templates/header', $data);
         }else{
             redirect('users/login');
         }
