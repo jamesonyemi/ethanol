@@ -22,7 +22,7 @@
       <ul class="nav navbar-nav navbar-right">
         <?php if ($this->session->userdata('login')){ ?>
         <li><p class="navbar-text">Hello <?php echo $this->session->userdata('user_name'); ?></p></li>
-        <li><a href="<?php echo base_url(); ?>index.php/home/logout">Log Out</a></li>
+        <li><a href="<?php echo base_url(); ?>#">Log Out</a></li>
         <?php } else { ?>
         <li><a href="<?php echo base_url(); ?>">Login</a></li>
         <li><a href="<?php echo base_url(); ?>signup">Signup</a></li>

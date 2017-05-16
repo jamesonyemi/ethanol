@@ -6,6 +6,7 @@ class Users extends CI_Controller {
         parent::__construct();
         $this->load->library('form_validation');
         $this->load->model('user');
+        $this->load->library('session');
     }
     
     /*
@@ -17,6 +18,7 @@ class Users extends CI_Controller {
             $data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
             //load the view
             $this->load->view('templates/header', $data);
+            $this->load->view('templates/nav',$data['user']['name']);
             $this->load->view('pages/home', $data);
             $this->load->view('templates/header', $data);
         }else{
@@ -45,7 +47,8 @@ class Users extends CI_Controller {
                 $con['conditions'] = array(
                     'email'=>$this->input->post('email'),
                     'password' => md5($this->input->post('password')),
-                    'status' => '1'
+                    'status' => '1',
+
                 );
                 $checkLogin = $this->user->getRows($con);
                 if($checkLogin){

@@ -220,11 +220,14 @@ body {
     width: 100%;
 	float:left;
 	background-color: rgba(20, 21, 22, 0.52);
+	border-radius: 5px;
 }
 .login-form {
     width: 100%;
     float: right;
-	 padding: 2em 2em;
+	padding: 2em 2em;
+		border-radius: 5px;
+
 }
 .login-form input[type="email"] {
     margin-bottom: 15px;
@@ -249,7 +252,7 @@ button[type="submit"] input[type="submit"] {
 }
 
 p.statusMsg{color: #fff;margin-bottom: 10px;}
-p.footInfo{color: #fff;margin-top: 10px;font-size: 18px;}
+p.footInfo{color: #fff;margin-top: 20px;font-size: 18px;}
 .footInfo a{cursor:pointer;color:#00BCD4;}
 .account-info p{color: #fff;margin: 10px 0px 10px 0px;}
 .logoutBtn{float: right;color: #FCB216;}
@@ -276,6 +279,7 @@ p.footInfo{color: #fff;margin-top: 10px;font-size: 18px;}
 		float: none;
 		padding: 2em 2em;
 		margin-top: 1em;
+		border-radius: 10px;
 	}
 }
 @media(max-width:640px){

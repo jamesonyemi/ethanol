@@ -54,6 +54,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['translate_uri_dashes'] = FALSE;
 
     $route['default_controller'] = 'users/login';
+   // $route['pages/(:any)'] = 'home/index/$1';
+   // $route['default_controller'] = 'users/login';
+
 
     $users      =   $route[('users')]      =   'users/login/'; //alternative login implementation
     $user_login =   $route[('login')]      =   'Login/index/$1';
@@ -65,6 +68,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	$ourworks   =   $route['(ourworks)']   =   'ourworks/workpage/$1';
 	$process    =   $route['(process)']    =   'process/processpage/$1';
 	$contact    =   $route['(contact)']    =   'contact/contactpage/$1';
+
+	$route['pages/(:num)'] = 'home/index/$1';
 
 	$controller = array(
 		$users      =>  'users',
@@ -82,7 +87,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	if (array_search($this->uri->segment(1), $controller, TRUE)) {
 
-		$route['default_controller'] = 'login';
+		//$route['default_controller'] = 'home';
+		$route['default_controller'] = 'users/login';
 	}
 
 

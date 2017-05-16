@@ -21,10 +21,10 @@
 			<ul class="nav navbar-nav navbar-right">
 				<?php if ($this->session->userdata('login')){ ?>
 				<li><p class="navbar-text">Hello <?php echo $this->session->userdata('firstname'); ?></p></li>
-				<li><a href="<?php echo base_url(); ?>index.php/home/logout">Log Out</a></li>
+				<li><a href="<?php echo base_url(); ?>#">Log Out</a></li>
 				<?php } else { ?>
 				<li><a href="<?php echo base_url(); ?>login">Login</a></li>
-				<li><a href="<?php echo base_url(); ?>signup">Signup</a></li>
+				<li><a href="<?php echo base_url(); ?>pages/signup">Signup</a></li>
 				<?php } ?>
 			</ul>
 		</div>
@@ -54,6 +54,13 @@
 				<input class="form-control" name="email" placeholder="Email" type="text" value="<?php echo set_value('email'); ?>" />
 				<span class="text-danger"><?php echo form_error('email'); ?></span>
 			</div>
+
+			<div class="form-group">
+				<label for="subject">Phone</label>
+				<input class="form-control" name="Phone" placeholder="Phone" type="Phone" />
+				<span class="text-danger"><?php echo form_error('Phone'); ?></span>
+			</div>
+
 
 			<div class="form-group">
 				<label for="subject">Password</label>
